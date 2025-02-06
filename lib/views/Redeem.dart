@@ -24,10 +24,15 @@ class Reedem extends StatelessWidget {
             color: Color(0xffffffff),
           ),
         ),
-        leading: Icon(
-          Icons.arrow_back,
-          color: Color(0xffffffff),
-          size: 24,
+      leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Color.fromARGB(255, 255, 255, 255),
+            size: 26,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
         ),
       ),
       body: Padding(

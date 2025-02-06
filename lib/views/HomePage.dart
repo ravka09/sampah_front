@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:myapp/views/histori.dart';
-import 'package:myapp/views/jenisSampah.dart';
+import 'package:myapp/views/RiwayatSetor.dart';
+import 'package:myapp/views/JenisSampah.dart';
 import 'package:myapp/views/Redeem.dart';
 import 'package:myapp/views/loginpage.dart';
 import 'package:myapp/views/SetorSampah.dart';
@@ -343,6 +343,11 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.max,
                       children: [
+                        GestureDetector(
+                          onTap: () {
+                            Get.to(() => const JenisSampah());
+                          },
+                        ),
                         Padding(
                           padding: EdgeInsets.fromLTRB(16, 5, 16, 10),
                           child: Image(
@@ -383,6 +388,11 @@ class HomePage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.max,
                       children: [
+                        GestureDetector(
+                          onTap: () {
+                            Get.to(() => const RiwayatSetor());
+                          },
+                        ),
                         Padding(
                           padding: EdgeInsets.fromLTRB(16, 5, 16, 10),
                           child: Image(

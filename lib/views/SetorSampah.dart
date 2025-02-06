@@ -24,10 +24,15 @@ class SetorSampah extends StatelessWidget {
             color: Color.fromARGB(255, 242, 242, 242),
           ),
         ),
-        leading: Icon(
-          Icons.arrow_back,
-          color: Color.fromARGB(255, 255, 255, 255),
-          size: 26,
+       leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            color: Color.fromARGB(255, 255, 255, 255),
+            size: 26,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
         ),
       ),
       body: Padding(
