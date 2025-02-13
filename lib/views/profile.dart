@@ -6,16 +6,16 @@ class profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff5f5f5),
+      backgroundColor: const Color(0xfff5f5f5),
       appBar: AppBar(
         elevation: 4,
         centerTitle: false,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xff1da650),
-        shape: RoundedRectangleBorder(
+        backgroundColor: const Color(0xff1da650),
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.zero,
         ),
-        title: Text(
+        title: const Text(
           "Profile",
           style: TextStyle(
             fontWeight: FontWeight.w700,
@@ -25,7 +25,7 @@ class profile extends StatelessWidget {
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           color: Colors.white,
           onPressed:() {
             Navigator.pop(context);
@@ -33,7 +33,7 @@ class profile extends StatelessWidget {
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -49,7 +49,7 @@ class profile extends StatelessWidget {
                       height: 120,
                       width: 120,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                       child: Image.network(
@@ -58,15 +58,15 @@ class profile extends StatelessWidget {
                     ),
                     Container(
                       alignment: Alignment.center,
-                      margin: EdgeInsets.all(0),
-                      padding: EdgeInsets.all(0),
+                      margin: const EdgeInsets.all(0),
+                      padding: const EdgeInsets.all(0),
                       width: 40,
                       height: 40,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xff1da650),
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.add_a_photo,
                         color: Color(0xffffffff),
                         size: 20,
@@ -75,7 +75,7 @@ class profile extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
                 child: ListTile(
                   tileColor: Color(0x00000000),
@@ -112,14 +112,14 @@ class profile extends StatelessWidget {
                       Icon(Icons.edit, color: Color(0xff79797c), size: 22),
                 ),
               ),
-              Divider(
+              const Divider(
                 color: Color(0xffdddddd),
                 height: 30,
                 thickness: 0,
                 indent: 50,
                 endIndent: 0,
               ),
-              ListTile(
+              const ListTile(
                 tileColor: Color(0x00ffffff),
                 title: Text(
                   "About",
@@ -152,14 +152,14 @@ class profile extends StatelessWidget {
                     color: Color(0xff1da650), size: 24),
                 trailing: Icon(Icons.edit, color: Color(0xff79797c), size: 22),
               ),
-              Divider(
+              const Divider(
                 color: Color(0xffdddddd),
                 height: 20,
                 thickness: 0,
                 indent: 50,
                 endIndent: 0,
               ),
-              ListTile(
+              const ListTile(
                 tileColor: Color(0x00ffffff),
                 title: Text(
                   "Phone",

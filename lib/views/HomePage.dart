@@ -14,14 +14,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffeeeff3),
+      backgroundColor: const Color(0xffeeeff3),
       appBar: AppBar(
-        title: Text("Home"),
+        title: const Text("Home"),
         actions: [
           IconButton(
-            icon: Icon(Icons.settings),
+            icon: const Icon(Icons.settings),
+            color: const Color.fromARGB(255, 0, 0, 0),
             onPressed: () {
-             Get.to (() => const Settings());
+              Get.to(() => const Settings());
               // Tambahkan aksi untuk icon settings di sini
             },
           ),
@@ -34,7 +35,7 @@ class HomePage extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -48,18 +49,17 @@ class HomePage extends StatelessWidget {
                       height: 30,
                       width: 30,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
-                      child: Image.network(
-                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqXu_FLpL0Y46q1vnyPBX7JTZi4J8dx453IHRDMXQdi-l9qGP-LD1BxPigKQUV8sjszLk&usqp=CAU",
+                      child: Image.asset("assets/images/logosampah.png",
                           fit: BoxFit.cover),
                     ),
                   ),
                 ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
               child: Text(
                 "Hey Ravka,",
@@ -73,7 +73,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(16, 4, 0, 0),
               child: Text(
                 "Welcome back!",
@@ -88,32 +88,32 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 16, 0, 0),
-              padding: EdgeInsets.all(0),
+              margin: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+              padding: const EdgeInsets.all(0),
               width: MediaQuery.of(context).size.width,
               height: 160,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xffeeeff3),
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.zero,
               ),
               child: ListView(
                 scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.all(0),
+                padding: const EdgeInsets.all(0),
                 shrinkWrap: true,
-                physics: ClampingScrollPhysics(),
+                physics: const ClampingScrollPhysics(),
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                    padding: EdgeInsets.all(8),
+                    margin: const EdgeInsets.fromLTRB(16, 0, 0, 0),
+                    padding: const EdgeInsets.all(8),
                     width: 250,
                     height: 100,
                     decoration: BoxDecoration(
-                      color: Color(0xff1da650),
+                      color: const Color(0xff1da650),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(16.0),
                     ),
-                    child: Padding(
+                    child: const Padding(
                       padding: EdgeInsets.all(8),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -153,16 +153,16 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                    padding: EdgeInsets.all(8),
+                    margin: const EdgeInsets.fromLTRB(16, 0, 0, 0),
+                    padding: const EdgeInsets.all(8),
                     width: 250,
                     height: 100,
                     decoration: BoxDecoration(
-                      color: Color(0xffced623),
+                      color: const Color(0xffced623),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(16.0),
                     ),
-                    child: Padding(
+                    child: const Padding(
                       padding: EdgeInsets.all(8),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -204,8 +204,8 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
-              padding: EdgeInsets.fromLTRB(16, 16, 0, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(2, 2, 0, 0),
               child: Text(
                 "Operations",
                 textAlign: TextAlign.start,
@@ -219,31 +219,31 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(0, 16, 0, 0),
-              padding: EdgeInsets.all(0),
+              margin: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+              padding: const EdgeInsets.all(0),
               width: MediaQuery.of(context).size.width,
               height: 80,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xffeeeff3),
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.zero,
               ),
               child: ListView(
                 scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+                padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                 shrinkWrap: true,
-                physics: ClampingScrollPhysics(),
+                physics: const ClampingScrollPhysics(),
                 children: [
                   Container(
-                    margin: EdgeInsets.all(0),
-                    padding: EdgeInsets.all(0),
+                    margin: const EdgeInsets.all(0),
+                    padding: const EdgeInsets.all(0),
                     width: 80,
-                    height: 20,
+                    height: 100,
                     decoration: BoxDecoration(
-                      color: Color(0xfff9fafc),
+                      color: const Color(0xfff9fafc),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(12.0),
-                      border: Border.all(color: Color(0x4c9e9e9e), width: 1),
+                      border: Border.all(color: const Color(0x4c9e9e9e), width: 1),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -252,23 +252,32 @@ class HomePage extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            Get.to(() => const Reedem ());
+                            Get.to(() => const Reedem());
                           },
-                        ),
-                        
-                    
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(16, 5, 16, 7),
-                          child: Image(
-                            image: NetworkImage(
-                                "https://raw.githubusercontent.com/adipramanadev/sampah/refs/heads/main/img/logo.png"),
-                            height: 40,
+                          child: Container(
+                            height: 40, // Example size; adjust as needed.
                             width: 40,
-                            fit: BoxFit.cover,
+                            color: Colors
+                                .transparent, // Make sure there's a visible child.
                           ),
                         ),
-                        Text(
-                          "Reedem poins",
+                        Column(
+                          mainAxisSize:
+                              MainAxisSize.min, // Sizes itself to fit content.
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(16, 5, 16, 7),
+                              child: Image.network(
+                                'https://raw.githubusercontent.com/adipramanadev/sampah/refs/heads/main/img/logo.png',
+                                height: 40,
+                                width: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const Text(
+                          "NAMA",
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.clip,
                           style: TextStyle(
@@ -282,15 +291,15 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                    padding: EdgeInsets.all(0),
+                    margin: const EdgeInsets.fromLTRB(16, 0, 0, 0),
+                    padding: const EdgeInsets.all(0),
                     width: 80,
                     height: 100,
                     decoration: BoxDecoration(
-                      color: Color(0xfff9fafc),
+                      color: const Color(0xfff9fafc),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(12.0),
-                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                      border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -302,8 +311,7 @@ class HomePage extends StatelessWidget {
                             Get.to(() => const SetorSampah());
                           },
                         ),
-
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.fromLTRB(16, 5, 16, 10),
                           child: Image(
                             image: NetworkImage(
@@ -313,7 +321,7 @@ class HomePage extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "Setor Sampah",
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.clip,
@@ -328,19 +336,19 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                    padding: EdgeInsets.all(0),
+                    margin: const EdgeInsets.fromLTRB(16, 0, 0, 0),
+                    padding: const EdgeInsets.all(0),
                     width: 80,
                     height: 100,
                     decoration: BoxDecoration(
-                      color: Color(0xfff9fafc),
+                      color: const Color(0xfff9fafc),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(12.0),
-                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                      border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         GestureDetector(
@@ -348,7 +356,7 @@ class HomePage extends StatelessWidget {
                             Get.to(() => const JenisSampah());
                           },
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.fromLTRB(16, 5, 16, 10),
                           child: Image(
                             image: NetworkImage(
@@ -358,7 +366,7 @@ class HomePage extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "Jenis Sampah",
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.clip,
@@ -373,15 +381,15 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.fromLTRB(16, 0, 0, 0),
-                    padding: EdgeInsets.all(0),
+                    margin: const EdgeInsets.fromLTRB(16, 0, 0, 0),
+                    padding: const EdgeInsets.all(0),
                     width: 80,
                     height: 100,
                     decoration: BoxDecoration(
-                      color: Color(0xfff9fafc),
+                      color: const Color(0xfff9fafc),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(12.0),
-                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                      border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -393,7 +401,7 @@ class HomePage extends StatelessWidget {
                             Get.to(() => const RiwayatSetor());
                           },
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.fromLTRB(16, 5, 16, 10),
                           child: Image(
                             image: NetworkImage(
@@ -403,7 +411,7 @@ class HomePage extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        Text(
+                        const Text(
                           "Riwayat Setor",
                           textAlign: TextAlign.start,
                           overflow: TextOverflow.clip,
@@ -420,7 +428,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.fromLTRB(16, 16, 0, 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -451,9 +459,9 @@ class HomePage extends StatelessWidget {
             ),
             ListView(
               scrollDirection: Axis.vertical,
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -464,14 +472,14 @@ class HomePage extends StatelessWidget {
                       height: 45,
                       width: 45,
                       clipBehavior: Clip.antiAlias,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                       ),
                       child: Image.network(
                           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLQUXqMrzrmkxd3QpxGL5bzgxELsztrL1AgQ&usqp=CAU",
                           fit: BoxFit.cover),
                     ),
-                    Expanded(
+                    const Expanded(
                       flex: 1,
                       child: Padding(
                         padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
@@ -510,20 +518,20 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(32, 0, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(32, 0, 0, 0),
                       child: Chip(
                         labelPadding:
-                            EdgeInsets.symmetric(vertical: 0, horizontal: 4),
-                        label: Text("Rp27.000"),
-                        labelStyle: TextStyle(
+                            const EdgeInsets.symmetric(vertical: 0, horizontal: 4),
+                        label: const Text("Rp27.000"),
+                        labelStyle: const TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                           color: Color(0xffffffff),
                         ),
-                        backgroundColor: Color(0xff1da550),
+                        backgroundColor: const Color(0xff1da550),
                         elevation: 0,
-                        shadowColor: Color(0xff808080),
+                        shadowColor: const Color(0xff808080),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16.0),
                         ),
@@ -532,7 +540,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -542,14 +550,14 @@ class HomePage extends StatelessWidget {
                         height: 45,
                         width: 45,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.network(
                             "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dXNlcnN8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
                             fit: BoxFit.cover),
                       ),
-                      Expanded(
+                      const Expanded(
                         flex: 1,
                         child: Padding(
                           padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
@@ -588,20 +596,20 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(32, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(32, 0, 0, 0),
                         child: Chip(
                           labelPadding:
-                              EdgeInsets.symmetric(vertical: 0, horizontal: 4),
-                          label: Text("Rp31.000"),
-                          labelStyle: TextStyle(
+                              const EdgeInsets.symmetric(vertical: 0, horizontal: 4),
+                          label: const Text("Rp31.000"),
+                          labelStyle: const TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.normal,
                             color: Color(0xffffffff),
                           ),
-                          backgroundColor: Color(0xff1da550),
+                          backgroundColor: const Color(0xff1da550),
                           elevation: 0,
-                          shadowColor: Color(0xff808080),
+                          shadowColor: const Color(0xff808080),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16.0),
                           ),
@@ -611,7 +619,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -621,14 +629,14 @@ class HomePage extends StatelessWidget {
                         height: 45,
                         width: 45,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.network(
                             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxtDZAvImObxjDKS11-n0-BwpvuEEZbiIYC3qbUAorUHLBf7yz8THOXt5v67PNtv6anpE&usqp=CAU",
                             fit: BoxFit.cover),
                       ),
-                      Expanded(
+                      const Expanded(
                         flex: 1,
                         child: Padding(
                           padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
@@ -667,20 +675,20 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.fromLTRB(36, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(36, 0, 0, 0),
                         child: Chip(
                           labelPadding:
-                              EdgeInsets.symmetric(vertical: 0, horizontal: 4),
-                          label: Text("Rp10.000"),
-                          labelStyle: TextStyle(
+                              const EdgeInsets.symmetric(vertical: 0, horizontal: 4),
+                          label: const Text("Rp10.000"),
+                          labelStyle: const TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
                             fontStyle: FontStyle.normal,
                             color: Color(0xffffffff),
                           ),
-                          backgroundColor: Color(0xff1da550),
+                          backgroundColor: const Color(0xff1da550),
                           elevation: 0,
-                          shadowColor: Color(0xff808080),
+                          shadowColor: const Color(0xff808080),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(16.0),
                           ),

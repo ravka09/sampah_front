@@ -6,16 +6,16 @@ class RiwayatSetor extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffeeeff3),
+      backgroundColor: const Color(0xffeeeff3),
       appBar: AppBar(
         elevation: 0,
         centerTitle: false,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xff1ca650),
-        shape: RoundedRectangleBorder(
+        backgroundColor: const Color(0xff1ca650),
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.zero,
         ),
-        title: Text(
+        title: const Text(
           "Riwayat Setor",
           style: TextStyle(
             fontWeight: FontWeight.w600,
@@ -25,7 +25,7 @@ class RiwayatSetor extends StatelessWidget {
           ),
         ),
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Color.fromARGB(255, 255, 255, 255),
             size: 26,
@@ -41,7 +41,7 @@ class RiwayatSetor extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsets.fromLTRB(13, 10, 10, 10),
+            padding: const EdgeInsets.fromLTRB(13, 10, 10, 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -51,17 +51,17 @@ class RiwayatSetor extends StatelessWidget {
                   flex: 1,
                   child: Container(
                     alignment: Alignment.center,
-                    margin: EdgeInsets.fromLTRB(0, 0, 4, 0),
-                    padding: EdgeInsets.all(8),
+                    margin: const EdgeInsets.fromLTRB(0, 0, 4, 0),
+                    padding: const EdgeInsets.all(8),
                     width: 100,
                     height: 35,
                     decoration: BoxDecoration(
-                      color: Color(0x1f000000),
+                      color: const Color(0x1f000000),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(40.0),
-                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                      border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
                     ),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.max,
@@ -96,17 +96,17 @@ class RiwayatSetor extends StatelessWidget {
                   flex: 1,
                   child: Container(
                     alignment: Alignment.center,
-                    margin: EdgeInsets.fromLTRB(0, 0, 4, 0),
-                    padding: EdgeInsets.all(8),
+                    margin: const EdgeInsets.fromLTRB(0, 0, 4, 0),
+                    padding: const EdgeInsets.all(8),
                     width: 100,
                     height: 35,
                     decoration: BoxDecoration(
-                      color: Color(0x1f000000),
+                      color: const Color(0x1f000000),
                       shape: BoxShape.rectangle,
                       borderRadius: BorderRadius.circular(40.0),
-                      border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                      border: Border.all(color: const Color(0x4d9e9e9e), width: 1),
                     ),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisSize: MainAxisSize.max,
@@ -140,7 +140,7 @@ class RiwayatSetor extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
+          const Padding(
             padding: EdgeInsets.fromLTRB(15, 25, 0, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -168,18 +168,18 @@ class RiwayatSetor extends StatelessWidget {
             flex: 1,
             child: ListView(
               scrollDirection: Axis.vertical,
-              padding: EdgeInsets.fromLTRB(8, 0, 8, 8),
+              padding: const EdgeInsets.fromLTRB(8, 0, 8, 8),
               shrinkWrap: false,
-              physics: ScrollPhysics(),
+              physics: const ScrollPhysics(),
               children: [
                 Card(
-                  margin: EdgeInsets.all(4),
-                  color: Color(0xfff9fafc),
-                  shadowColor: Color(0xff000000),
+                  margin: const EdgeInsets.all(4),
+                  color: const Color(0xfff9fafc),
+                  shadowColor: const Color(0xff000000),
                   elevation: 4,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0),
-                    side: BorderSide(color: Color(0x4d9e9e9e), width: 1),
+                    side: const BorderSide(color: Color(0x4d9e9e9e), width: 1),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -197,12 +197,12 @@ class RiwayatSetor extends StatelessWidget {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                                 child: Container(
                                   height: 40,
                                   width: 40,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.network(
@@ -211,16 +211,16 @@ class RiwayatSetor extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.all(0),
-                                padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                margin: const EdgeInsets.all(0),
+                                padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                                 width: 125,
                                 height: 29,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xfff9fafc),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.zero,
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "Sampah Plastik",
                                   textAlign: TextAlign.left,
                                   overflow: TextOverflow.clip,
@@ -233,16 +233,16 @@ class RiwayatSetor extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.all(0),
-                                padding: EdgeInsets.fromLTRB(45, 10, 0, 0),
+                                margin: const EdgeInsets.all(0),
+                                padding: const EdgeInsets.fromLTRB(45, 10, 0, 0),
                                 width: 85,
                                 height: 29,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xfff9fafc),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.zero,
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "30Kg",
                                   textAlign: TextAlign.start,
                                   overflow: TextOverflow.clip,
@@ -261,7 +261,7 @@ class RiwayatSetor extends StatelessWidget {
                     ],
                   ),
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.fromLTRB(15, 25, 0, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -286,13 +286,13 @@ class RiwayatSetor extends StatelessWidget {
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.all(4),
-                  color: Color(0xfff9fafc),
-                  shadowColor: Color(0xff000000),
+                  margin: const EdgeInsets.all(4),
+                  color: const Color(0xfff9fafc),
+                  shadowColor: const Color(0xff000000),
                   elevation: 1,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0),
-                    side: BorderSide(color: Color(0x4d9e9e9e), width: 1),
+                    side: const BorderSide(color: Color(0x4d9e9e9e), width: 1),
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -310,12 +310,12 @@ class RiwayatSetor extends StatelessWidget {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                                 child: Container(
                                   height: 40,
                                   width: 40,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.network(
@@ -324,16 +324,16 @@ class RiwayatSetor extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.all(0),
-                                padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                margin: const EdgeInsets.all(0),
+                                padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                                 width: 125,
                                 height: 29,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xfff9fafc),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.zero,
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "Sampah Kertas",
                                   textAlign: TextAlign.start,
                                   overflow: TextOverflow.clip,
@@ -346,16 +346,16 @@ class RiwayatSetor extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.all(0),
-                                padding: EdgeInsets.fromLTRB(45, 10, 0, 0),
+                                margin: const EdgeInsets.all(0),
+                                padding: const EdgeInsets.fromLTRB(45, 10, 0, 0),
                                 width: 85,
                                 height: 29,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xfff8f9fc),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.zero,
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "90Kg",
                                   textAlign: TextAlign.start,
                                   overflow: TextOverflow.clip,
@@ -371,7 +371,7 @@ class RiwayatSetor extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Divider(
+                      const Divider(
                         color: Color(0xff808080),
                         height: 16,
                         thickness: 0.3,
@@ -389,12 +389,12 @@ class RiwayatSetor extends StatelessWidget {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                                 child: Container(
                                   height: 40,
                                   width: 40,
                                   clipBehavior: Clip.antiAlias,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: Image.network(
@@ -403,16 +403,16 @@ class RiwayatSetor extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.all(0),
-                                padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                margin: const EdgeInsets.all(0),
+                                padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
                                 width: 125,
                                 height: 29,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xfff9fafc),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.zero,
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "Sampah Logam",
                                   textAlign: TextAlign.start,
                                   overflow: TextOverflow.clip,
@@ -425,16 +425,16 @@ class RiwayatSetor extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.all(0),
-                                padding: EdgeInsets.fromLTRB(45, 10, 0, 0),
+                                margin: const EdgeInsets.all(0),
+                                padding: const EdgeInsets.fromLTRB(45, 10, 0, 0),
                                 width: 85,
                                 height: 29,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0xfff9fafc),
                                   shape: BoxShape.rectangle,
                                   borderRadius: BorderRadius.zero,
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "70Kg",
                                   textAlign: TextAlign.start,
                                   overflow: TextOverflow.clip,
