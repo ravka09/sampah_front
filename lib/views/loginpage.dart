@@ -163,7 +163,7 @@ class _LoginPageState extends State<loginpage> {
                         ),
                         TextButton(
                           onPressed: () {
-                            Get.to(() => const sampahregister());
+                            Get.to(() => const SignUp());
                             // TODO: Add navigation to SignUp page
                             print("Navigate to SignUp page");
                           },

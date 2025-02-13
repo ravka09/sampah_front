@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Settings extends StatelessWidget {
   const Settings({super.key});
@@ -6,21 +7,21 @@ class Settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffeeeff3),
+      backgroundColor: const Color(0xffeeeff3),
       body: Stack(
         alignment: Alignment.topLeft,
         children: [
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.all(0),
-            padding: EdgeInsets.fromLTRB(16, 30, 16, 16),
+            margin: const EdgeInsets.all(0),
+            padding: const EdgeInsets.fromLTRB(16, 30, 16, 16),
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * 0.4,
             decoration: BoxDecoration(
-              color: Color(0xffeeeff3),
+              color: const Color(0xffeeeff3),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.zero,
-              border: Border.all(color: Color(0x4d9e9e9e), width: 0),
+              border: Border.all(color: const Color(0x4d9e9e9e), width: 0),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -33,12 +34,14 @@ class Settings extends StatelessWidget {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     IconButton(
-                      icon: Icon(Icons.arrow_back),
-                      onPressed: () {},
-                      color: Color(0xff212435),
+                      icon: const Icon(Icons.arrow_back),
+                       color: const Color.fromARGB(255, 0, 0, 0),
                       iconSize: 24,
+                      onPressed: () {
+                        Get.back();
+                      },
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.fromLTRB(0, 0, 100, 0),
                       child: Text(
                         "Settings",
@@ -55,7 +58,7 @@ class Settings extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -65,14 +68,14 @@ class Settings extends StatelessWidget {
                         height: 60,
                         width: 60,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.network(
                             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9YUwWTjUqlO04YDbTs51HpkmZSZLe2Px6g&s",
                             fit: BoxFit.cover),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
                         child: Text(
                           "Ravka",
@@ -94,24 +97,24 @@ class Settings extends StatelessWidget {
           ),
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.fromLTRB(16, 180, 16, 16),
-            padding: EdgeInsets.all(0),
+            margin: const EdgeInsets.fromLTRB(16, 180, 16, 16),
+            padding: const EdgeInsets.all(0),
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * 0.7000000000000001,
             decoration: BoxDecoration(
-              color: Color(0xffffffff),
+              color: const Color(0xffffffff),
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(12.0),
             ),
             child: Padding(
-              padding: EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+              padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                       width: 16,
                     ),
@@ -122,19 +125,19 @@ class Settings extends StatelessWidget {
                       children: [
                         Container(
                           alignment: Alignment.center,
-                          margin: EdgeInsets.all(0),
-                          padding: EdgeInsets.all(12),
-                          decoration: BoxDecoration(
+                          margin: const EdgeInsets.all(0),
+                          padding: const EdgeInsets.all(12),
+                          decoration: const BoxDecoration(
                             color: Color(0x343a57e8),
                             shape: BoxShape.circle,
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.admin_panel_settings,
                             color: Color(0xff1da650),
                             size: 24,
                           ),
                         ),
-                        Expanded(
+                        const Expanded(
                           flex: 1,
                           child: Padding(
                             padding: EdgeInsets.all(16),
@@ -152,14 +155,14 @@ class Settings extends StatelessWidget {
                           ),
                         ),
                         IconButton(
-                          icon: Icon(Icons.arrow_forward_ios),
+                          icon: const Icon(Icons.arrow_forward_ios),
                           onPressed: () {},
-                          color: Color(0xff212435),
+                          color: const Color(0xff212435),
                           iconSize: 24,
                         ),
                       ],
                     ),
-                    Divider(
+                    const Divider(
                       color: Color(0xff808080),
                       height: 16,
                       thickness: 0.3,
@@ -167,7 +170,7 @@ class Settings extends StatelessWidget {
                       endIndent: 0,
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -175,19 +178,19 @@ class Settings extends StatelessWidget {
                         children: [
                           Container(
                             alignment: Alignment.center,
-                            margin: EdgeInsets.all(0),
-                            padding: EdgeInsets.all(12),
-                            decoration: BoxDecoration(
+                            margin: const EdgeInsets.all(0),
+                            padding: const EdgeInsets.all(12),
+                            decoration: const BoxDecoration(
                               color: Color(0x343a57e8),
                               shape: BoxShape.circle,
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.help,
                               color: Color(0xff1da650),
                               size: 24,
                             ),
                           ),
-                          Expanded(
+                          const Expanded(
                             flex: 1,
                             child: Padding(
                               padding: EdgeInsets.all(16),
@@ -205,15 +208,15 @@ class Settings extends StatelessWidget {
                             ),
                           ),
                           IconButton(
-                            icon: Icon(Icons.arrow_forward_ios),
+                            icon: const Icon(Icons.arrow_forward_ios),
                             onPressed: () {},
-                            color: Color(0xff212435),
+                            color: const Color(0xff212435),
                             iconSize: 24,
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: Color(0xff808080),
                       height: 16,
                       thickness: 0.3,
@@ -221,7 +224,7 @@ class Settings extends StatelessWidget {
                       endIndent: 0,
                     ),
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -229,19 +232,19 @@ class Settings extends StatelessWidget {
                         children: [
                           Container(
                             alignment: Alignment.center,
-                            margin: EdgeInsets.all(0),
-                            padding: EdgeInsets.all(12),
-                            decoration: BoxDecoration(
+                            margin: const EdgeInsets.all(0),
+                            padding: const EdgeInsets.all(12),
+                            decoration: const BoxDecoration(
                               color: Color(0x343a57e8),
                               shape: BoxShape.circle,
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.delete,
                               color: Color(0xff1da650),
                               size: 24,
                             ),
                           ),
-                          Expanded(
+                          const Expanded(
                             flex: 1,
                             child: Padding(
                               padding: EdgeInsets.all(16),
@@ -259,22 +262,22 @@ class Settings extends StatelessWidget {
                             ),
                           ),
                           IconButton(
-                            icon: Icon(Icons.arrow_forward_ios),
+                            icon: const Icon(Icons.arrow_forward_ios),
                             onPressed: () {},
-                            color: Color(0xff212435),
+                            color: const Color(0xff212435),
                             iconSize: 24,
                           ),
                         ],
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: Color(0xff808080),
                       height: 16,
                       thickness: 0.3,
                       indent: 0,
                       endIndent: 0,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 16,
                       width: 16,
                     ),

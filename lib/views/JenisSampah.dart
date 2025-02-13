@@ -6,16 +6,16 @@ class JenisSampah extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffeeeff3),
+      backgroundColor: const Color(0xffeeeff3),
       appBar: AppBar(
         elevation: 4,
         centerTitle: false,
         automaticallyImplyLeading: false,
-        backgroundColor: Color(0xff1da650),
-        shape: RoundedRectangleBorder(
+        backgroundColor: const Color(0xff1da650),
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.zero,
         ),
-        title: Text(
+        title: const Text(
           "Jenis Sampah",
           style: TextStyle(
             fontWeight: FontWeight.w700,
@@ -25,7 +25,7 @@ class JenisSampah extends StatelessWidget {
           ),
         ),
        leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Color.fromARGB(255, 255, 255, 255),
             size: 26,
@@ -37,19 +37,19 @@ class JenisSampah extends StatelessWidget {
       ),
       body: ListView(
         scrollDirection: Axis.vertical,
-        padding: EdgeInsets.all(8),
+        padding: const EdgeInsets.all(8),
         shrinkWrap: true,
-        physics: ClampingScrollPhysics(),
+        physics: const ClampingScrollPhysics(),
         children: [
           Card(
-            margin: EdgeInsets.all(0),
-            color: Color(0xfff9fafc),
-            shadowColor: Color(0xff000000),
+            margin: const EdgeInsets.all(0),
+            color: const Color(0xfff9fafc),
+            shadowColor: const Color(0xff000000),
             elevation: 1,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
@@ -124,14 +124,14 @@ class JenisSampah extends StatelessWidget {
             ),
           ),
           Card(
-            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 0),
-            color: Color(0xfff9fafc),
-            shadowColor: Color(0xff000000),
+            margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 0),
+            color: const Color(0xfff9fafc),
+            shadowColor: const Color(0xff000000),
             elevation: 1,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
@@ -206,14 +206,14 @@ class JenisSampah extends StatelessWidget {
             ),
           ),
           Card(
-            margin: EdgeInsets.fromLTRB(0, 0, 0, 8),
-            color: Color(0xfff9fafc),
-            shadowColor: Color(0xff000000),
+            margin: const EdgeInsets.fromLTRB(0, 0, 0, 8),
+            color: const Color(0xfff9fafc),
+            shadowColor: const Color(0xff000000),
             elevation: 1,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
@@ -302,14 +302,14 @@ class JenisSampah extends StatelessWidget {
             ),
           ),
           Card(
-            margin: EdgeInsets.fromLTRB(0, 0, 0, 8),
-            color: Color(0xffffffff),
-            shadowColor: Color(0xff000000),
+            margin: const EdgeInsets.fromLTRB(0, 0, 0, 8),
+            color: const Color(0xffffffff),
+            shadowColor: const Color(0xff000000),
             elevation: 1,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12.0),
             ),
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,

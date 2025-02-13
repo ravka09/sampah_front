@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'loginpage.dart';
 
-class sampahregister extends StatelessWidget {
-  const sampahregister({super.key});
+class SignUp extends StatelessWidget {
+  const SignUp ({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff1f1f1),
+      backgroundColor: const Color(0xfff1f1f1),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -15,16 +16,16 @@ class sampahregister extends StatelessWidget {
           children: [
             Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.all(0),
-              padding: EdgeInsets.all(0),
+              margin: const EdgeInsets.all(0),
+              padding: const EdgeInsets.all(0),
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height * 0.4,
               decoration: BoxDecoration(
-                color: Color(0xff1da650),
+                color: const Color(0xff1da650),
                 shape: BoxShape.rectangle,
                 borderRadius:
-                    BorderRadius.only(bottomLeft: Radius.circular(60.0)),
-                border: Border.all(color: Color(0x4d9e9e9e), width: 1),
+                    const BorderRadius.only(bottomLeft: Radius.circular(60.0)),
+                border: Border.all(color: const Color.fromARGB(255, 255, 255, 255), width: 1),
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -35,14 +36,14 @@ class sampahregister extends StatelessWidget {
                     height: 70,
                     width: 70,
                     clipBehavior: Clip.antiAlias,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
                     child: Image.network(
                         "https://raw.githubusercontent.com/adipramanadev/sampah/refs/heads/main/img/logo.png",
                         fit: BoxFit.cover),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
                     child: Text(
                       "Register",
@@ -60,204 +61,148 @@ class sampahregister extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.fromLTRB(16, 30, 16, 16),
+              padding: const EdgeInsets.fromLTRB(16, 30, 16, 16),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.max,
                   children: [
+                    // Full Name Field
                     TextField(
                       controller: TextEditingController(),
                       obscureText: false,
                       textAlign: TextAlign.start,
                       maxLines: 1,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.w400,
                         fontStyle: FontStyle.normal,
                         fontSize: 14,
                         color: Color(0xff000000),
                       ),
                       decoration: InputDecoration(
-                        disabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(22.0),
-                          borderSide:
-                              BorderSide(color: Color(0xffd1c8c8), width: 1),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(22.0),
-                          borderSide:
-                              BorderSide(color: Color(0xffd1c8c8), width: 1),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(22.0),
-                          borderSide:
-                              BorderSide(color: Color(0xffd1c8c8), width: 1),
-                        ),
                         hintText: "Full Name",
-                        hintStyle: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          fontSize: 14,
-                          color: Color(0xff000000),
-                        ),
+                        prefixIcon: const Icon(Icons.person, color: Color(0xff000000)),
+                        fillColor: const Color(0xffc6c6ce),
                         filled: true,
-                        fillColor: Color(0xffc6c6ce),
-                        isDense: false,
-                        contentPadding: EdgeInsets.all(8),
-                        prefixIcon: Icon(Icons.person,
-                            color: Color(0xff000000), size: 24),
+                        contentPadding: const EdgeInsets.all(8),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(22.0),
+                          borderSide:
+                              const BorderSide(color: Color(0xffd1c8c8), width: 1),
+                        ),
                       ),
                     ),
+                    // Email Field
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                       child: TextField(
                         controller: TextEditingController(),
                         obscureText: false,
                         textAlign: TextAlign.start,
                         maxLines: 1,
-                        style: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontStyle: FontStyle.normal,
-                          fontSize: 12,
-                          color: Color(0xff000000),
-                        ),
-                        decoration: InputDecoration(
-                          disabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(22.0),
-                            borderSide:
-                                BorderSide(color: Color(0xffffffff), width: 1),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(22.0),
-                            borderSide:
-                                BorderSide(color: Color(0xffffffff), width: 1),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(22.0),
-                            borderSide:
-                                BorderSide(color: Color(0xffffffff), width: 1),
-                          ),
-                          hintText: "Email",
-                          hintStyle: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontStyle: FontStyle.normal,
-                            fontSize: 14,
-                            color: Color(0xff000000),
-                          ),
-                          filled: true,
-                          fillColor: Color(0xffc6c6ce),
-                          isDense: false,
-                          contentPadding: EdgeInsets.all(8),
-                          prefixIcon: Icon(Icons.mail,
-                              color: Color(0xff000000), size: 24),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-                      child: TextField(
-                        controller: TextEditingController(),
-                        obscureText: false,
-                        textAlign: TextAlign.start,
-                        maxLines: 1,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
                           fontSize: 14,
                           color: Color(0xff000000),
                         ),
                         decoration: InputDecoration(
-                          disabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(22.0),
-                            borderSide:
-                                BorderSide(color: Color(0xffffffff), width: 1),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(22.0),
-                            borderSide:
-                                BorderSide(color: Color(0xffffffff), width: 1),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(22.0),
-                            borderSide:
-                                BorderSide(color: Color(0xffffffff), width: 1),
-                          ),
-                          hintText: "Password",
-                          hintStyle: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontStyle: FontStyle.normal,
-                            fontSize: 14,
-                            color: Color(0xff000000),
-                          ),
+                          hintText: "Email",
+                          prefixIcon: const Icon(Icons.mail, color: Color(0xff000000)),
+                          fillColor: const Color(0xffc6c6ce),
                           filled: true,
-                          fillColor: Color(0xffc6c6ce),
-                          isDense: false,
-                          contentPadding: EdgeInsets.all(8),
-                          prefixIcon: Icon(Icons.visibility_off,
-                              color: Color(0xff000000), size: 24),
-                          suffixIcon: Icon(Icons.visibility,
-                              color: Color(0xff212435), size: 24),
+                          contentPadding: const EdgeInsets.all(8),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(22.0),
+                            borderSide:
+                                const BorderSide(color: Color(0xffd1c8c8), width: 1),
+                          ),
                         ),
                       ),
                     ),
+                    // Password Field
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
+                      child: TextField(
+                        controller: TextEditingController(),
+                        obscureText: true,
+                        textAlign: TextAlign.start,
+                        maxLines: 1,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontStyle: FontStyle.normal,
+                          fontSize: 14,
+                          color: Color(0xff000000),
+                        ),
+                        decoration: InputDecoration(
+                          hintText: "Password",
+                          prefixIcon: const Icon(Icons.lock, color: Color(0xff000000)),
+                          fillColor: const Color(0xffc6c6ce),
+                          filled: true,
+                          contentPadding: const EdgeInsets.all(8),
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(22.0),
+                            borderSide:
+                                const BorderSide(color: Color(0xffd1c8c8), width: 1),
+                          ),
+                        ),
+                      ),
+                    ),
+                    // Register Button
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 16, 0, 0),
                       child: MaterialButton(
-                        onPressed: () {},
-                        color: Color(0xff1da650),
+                        onPressed: () {
+                          // Handle register logic
+                        },
+                        color: const Color(0xff1da650),
                         elevation: 0,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(22.0),
                         ),
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
+                        height: 45,
+                        minWidth: MediaQuery.of(context).size.width,
                         child: Text(
                           "Register",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
-                            fontStyle: FontStyle.normal,
+                            color: Colors.white,
                           ),
                         ),
-                        textColor: Color(0xffffffff),
-                        height: 45,
-                        minWidth: MediaQuery.of(context).size.width,
                       ),
                     ),
                   ],
                 ),
               ),
             ),
+            // Already have an account? Login
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.max,
                 children: [
-                  Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Already have an account?",
-                      textAlign: TextAlign.start,
-                      overflow: TextOverflow.clip,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontStyle: FontStyle.normal,
-                        fontSize: 14,
-                        color: Color(0xff000000),
-                      ),
+                  const Text(
+                    "Already have an account?",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w400,
+                      fontSize: 14,
+                      color: Color(0xff000000),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(4, 0, 0, 0),
-                    child: Text(
+                  TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const loginpage()),
+                      );
+                    },
+                    child: const Text(
                       "Login",
-                      textAlign: TextAlign.start,
-                      overflow: TextOverflow.clip,
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
-                        fontStyle: FontStyle.normal,
                         fontSize: 14,
                         color: Color(0xff1da650),
                       ),
