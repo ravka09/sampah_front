@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/views/RiwayatSetor.dart';
 import 'package:myapp/views/JenisSampah.dart';
-import 'package:myapp/views/Redeem.dart';
 import 'package:myapp/views/SetorSampah.dart';
 import 'package:myapp/views/profile.dart';
 import 'package:myapp/views/Settings.dart';
@@ -151,22 +150,22 @@ class HomePage extends StatelessWidget {
       {
         "icon": Icons.card_giftcard,
         "label": "Redeem",
-        "route": const HomePage()
+        "route": (context) => HomePage()
       },
       {
         "icon": Icons.recycling,
         "label": "Setor Sampah",
-        "route": const SetorSampah()
+        "route": (context) => SetorSampah()
       },
       {
         "icon": Icons.list,
         "label": "Jenis Sampah",
-        "route": const JenisSampah()
+        "route": (context) => JenisSampah()
       },
       {
         "icon": Icons.history,
         "label": "Riwayat",
-        "route": const RiwayatSetor()
+        "route": (context) => RiwayatSetor()
       },
     ];
 
@@ -182,7 +181,8 @@ class HomePage extends StatelessWidget {
       ),
       itemBuilder: (context, index) {
         return GestureDetector(
-          onTap: () => Get.to(() => operations[index]["route"]),
+          onTap: () => Get.to(() => operations[index]["route"](context)),
+          // onTap: () => Get.to(() => print('klik')),
           child: Column(
             children: [
               CircleAvatar(
