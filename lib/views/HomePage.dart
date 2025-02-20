@@ -150,22 +150,22 @@ class HomePage extends StatelessWidget {
       {
         "icon": Icons.card_giftcard,
         "label": "Redeem",
-        "route": (context) => HomePage()
+        "route": () => HomePage()
       },
       {
         "icon": Icons.recycling,
         "label": "Setor Sampah",
-        "route": (context) => SetorSampah()
+        "route": () => SetorSampah()
       },
       {
         "icon": Icons.list,
         "label": "Jenis Sampah",
-        "route": (context) => JenisSampah()
+        "route": () => JenisSampah()
       },
       {
         "icon": Icons.history,
         "label": "Riwayat",
-        "route": (context) => RiwayatSetor()
+        "route": () => RiwayatSetor()
       },
     ];
 
@@ -181,7 +181,7 @@ class HomePage extends StatelessWidget {
       ),
       itemBuilder: (context, index) {
         return GestureDetector(
-          onTap: () => Get.to(() => operations[index]["route"](context)),
+          onTap: () => Get.to(operations[index]["route"]()),
           // onTap: () => Get.to(() => print('klik')),
           child: Column(
             children: [
