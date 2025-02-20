@@ -1,36 +1,36 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'loginpage.dart';
 
 class SignUp extends StatelessWidget {
-  const SignUp ({super.key});
+  const SignUp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xfff1f1f1),
+      backgroundColor: const Color(0xff1da650),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: [
-            Container(
-              alignment: Alignment.center,
-              margin: const EdgeInsets.all(0),
-              padding: const EdgeInsets.all(0),
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height * 0.4,
-              decoration: BoxDecoration(
-                color: const Color(0xff1da650),
-                shape: BoxShape.rectangle,
-                borderRadius:
-                    const BorderRadius.only(bottomLeft: Radius.circular(60.0)),
-                border: Border.all(color: const Color.fromARGB(255, 255, 255, 255), width: 1),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+              child: IconButton(
+                icon: const Icon(Icons.arrow_back),
+                color: const Color.fromARGB(255, 255, 255, 255),
+                iconSize: 24,
+                onPressed: () {
+                  Get.back();
+                },
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 30, 16, 0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisSize: MainAxisSize.min,
                 children: [
                   Container(
                     height: 70,
@@ -40,21 +40,19 @@ class SignUp extends StatelessWidget {
                       shape: BoxShape.circle,
                     ),
                     child: Image.network(
-                        "https://raw.githubusercontent.com/adipramanadev/sampah/refs/heads/main/img/logo.png",
-                        fit: BoxFit.cover),
+                      "https://raw.githubusercontent.com/adipramanadev/sampah/refs/heads/main/img/logo.png",
+                      fit: BoxFit.cover,
+                    ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.fromLTRB(0, 16, 0, 0),
-                    child: Text(
-                      "Register",
-                      textAlign: TextAlign.start,
-                      overflow: TextOverflow.clip,
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontStyle: FontStyle.normal,
-                        fontSize: 20,
-                        color: Color(0xffffffff),
-                      ),
+                  const SizedBox(width: 16), // Memberikan jarak antara gambar dan teks
+                  const Text(
+                    "Register",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                      fontStyle: FontStyle.normal,
+                      fontSize: 20,
+                      color: Color(0xffffffff),
                     ),
                   ),
                 ],
@@ -156,7 +154,7 @@ class SignUp extends StatelessWidget {
                         onPressed: () {
                           // Handle register logic
                         },
-                        color: const Color(0xff1da650),
+                        color: const Color(0xffeeeff3),
                         elevation: 0,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(22.0),
@@ -169,7 +167,7 @@ class SignUp extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
-                            color: Colors.white,
+                            color: const Color.fromARGB(255, 0, 0, 0),
                           ),
                         ),
                       ),
@@ -189,7 +187,7 @@ class SignUp extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w400,
                       fontSize: 14,
-                      color: Color(0xff000000),
+                      color: Color.fromARGB(255, 255, 255, 255),
                     ),
                   ),
                   TextButton(
@@ -204,7 +202,7 @@ class SignUp extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 14,
-                        color: Color(0xff1da650),
+                        color: Color.fromARGB(255, 255, 255, 255),
                       ),
                     ),
                   ),
