@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'Otp.dart';
 
 class Forgot extends StatelessWidget {
   const Forgot({super.key});
@@ -126,7 +128,8 @@ class Forgot extends StatelessWidget {
                   height: 45, // Tinggi tombol
                   child: MaterialButton(
                     onPressed: () {
-                      // Tambahkan logika untuk lanjut di sini.
+                      Get.to(const Otp());
+                      // Navigasi ke halaman OTP
                     },
                     color: const Color(0xff1da650),
                     elevation: 0,
