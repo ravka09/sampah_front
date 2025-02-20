@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/views/RiwayatSetor.dart';
 import 'package:myapp/views/JenisSampah.dart';
-import 'package:myapp/views/Redeem.dart';
+// import 'package:myapp/views/Redeem.dart';
 import 'package:myapp/views/SetorSampah.dart';
 import 'package:myapp/views/profile.dart';
 import 'package:myapp/views/Settings.dart';

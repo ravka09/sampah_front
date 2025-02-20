@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Reedem extends StatelessWidget {
-  const Reedem({super.key});
+class Redeem extends StatelessWidget {
+  const Redeem({super.key});
 
   @override
   Widget build(BuildContext context) {
