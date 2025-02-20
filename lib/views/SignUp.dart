@@ -162,12 +162,12 @@ class SignUp extends StatelessWidget {
                         padding: const EdgeInsets.all(16),
                         height: 45,
                         minWidth: MediaQuery.of(context).size.width,
-                        child: Text(
+                        child: const Text(
                           "Register",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w700,
-                            color: const Color.fromARGB(255, 0, 0, 0),
+                            color: Color.fromARGB(255, 0, 0, 0),
                           ),
                         ),
                       ),

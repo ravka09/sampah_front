@@ -125,7 +125,7 @@ class SetorSampah extends StatelessWidget {
                   textColor: const Color(0xff000000),
                   height: 40,
                   minWidth: 300,
-                  child: Text(
+                  child: const Text(
                     "Setor",
                     style: TextStyle(
                       fontSize: 17,
